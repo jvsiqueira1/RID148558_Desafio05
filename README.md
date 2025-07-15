@@ -13,14 +13,13 @@ API RESTful para gerenciamento de livros de uma biblioteca, desenvolvida em Node
 ---
 
 ## Requisitos
-- Node.js >= 14
-- npm
+- Node.js
 
 ## Instalação
 
-1. Acesse a pasta do backend:
+1. Clone o repositório:
    ```bash
-   cd Desafio05-Back
+   git clone https://github.com/jvsiqueira1/RID148558_Desafio05.git
    ```
 2. Instale as dependências:
    ```bash
