@@ -39,7 +39,7 @@ O servidor irá rodar por padrão na porta **3000**.
 ## Estrutura do Projeto
 
 ```
-Desafio05-Back/
+RID148558_Desafio05/
 ├── biblioteca_db.sqlite         # Banco de dados SQLite
 ├── package.json                # Dependências e scripts
 ├── server.js                   # Ponto de entrada da aplicação
