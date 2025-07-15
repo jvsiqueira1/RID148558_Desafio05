@@ -134,3 +134,22 @@ Desafio05-Back/
 > Foi necessário corrigir o formulário de atualização de livros no frontend para evitar o comportamento padrão de recarregar a página ao clicar em "Atualizar Livro". O formulário agora utiliza o evento `onSubmit` com `e.preventDefault()` para garantir que a requisição de update seja enviada corretamente via JavaScript, sem refresh. Sem esse ajuste, o update não funcionava corretamente.
 
 --- 
+
+## Deploy do Frontend
+
+O frontend React integrado a esta API está disponível em:
+
+➡️ [Acesse o sistema online na Netlify](https://glowing-kashata-bbde2b.netlify.app/)
+
+---
+
+## Alterações realizadas no Frontend para integração
+
+- **Formulário de Cadastro e Edição:**
+  - Ajustado para usar `onSubmit` no `<form>` com `e.preventDefault()` para evitar o comportamento padrão de recarregar a página e garantir que as requisições sejam feitas via JavaScript (AJAX).
+  - O botão de submit foi mantido como `type="submit"` para seguir o padrão HTML, mas toda a lógica de envio é controlada pelo React.
+  - Após o cadastro, o formulário é resetado corretamente usando `document.getElementById('formulario').reset()`.
+- **Mensagens de Sucesso:**
+  - O backend foi ajustado para retornar apenas a string de sucesso no cadastro, garantindo que o alert do frontend mostre a mensagem corretamente sem necessidade de alterar a lógica do front.
+
+Essas alterações garantem que a integração entre o frontend fornecido e a API desenvolvida funcione perfeitamente, sem necessidade de grandes mudanças no código original do front. 

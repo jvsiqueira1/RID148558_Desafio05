@@ -33,7 +33,7 @@ async function createBookController(req, res) {
 
     try {
         const createdBook = await bookService.createBookService(newBook)
-        res.status(201).send(traduzirParaPortugues(createdBook))
+        res.status(201).type('text/plain').send('Livro cadastrado com sucesso')
     } catch (e) {
         res.status(400).send({ mensagem: e.message })
     }
