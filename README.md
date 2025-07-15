@@ -40,10 +40,10 @@ O servidor irá rodar por padrão na porta **3000**.
 
 ```
 RID148558_Desafio05/
-├── biblioteca_db.sqlite         # Banco de dados SQLite
+├── biblioteca_db.sqlite        # Banco de dados SQLite
 ├── package.json                # Dependências e scripts
-├── server.js                   # Ponto de entrada da aplicação
 └── src/
+    ├── server.js               # Ponto de entrada da aplicação
     ├── config/
     │   └── database.js         # Configuração do banco
     ├── controller/
