@@ -2,6 +2,8 @@
 
 API RESTful para gerenciamento de livros de uma biblioteca, desenvolvida em Node.js com Express e SQLite.
 
+> **Nota:** O banco de dados e a tabela `books` (em inglês) são criados automaticamente ao rodar o projeto. Não é necessário rodar comandos extras ou versionar o arquivo `.sqlite`.
+
 ## Sumário
 - [Requisitos](#requisitos)
 - [Instalação](#instalação)
@@ -119,6 +121,7 @@ RID148558_Desafio05/
 - Todos os campos devem ser enviados em português, conforme exemplos acima.
 - O backend já faz a tradução automática para o formato interno.
 - O CORS está habilitado para qualquer origem.
+- **O banco de dados e a tabela `books` (em inglês) são criados automaticamente ao rodar o projeto. Não é necessário rodar comandos manuais para isso.**
 
 ---
 

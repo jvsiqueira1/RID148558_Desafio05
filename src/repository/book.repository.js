@@ -1,13 +1,5 @@
 import db from '../config/database.js'
 
-db.run(`CREATE TABLE IF NOT EXISTS books (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    title TEXT NOT NULL,
-    pageCount INTEGER NOT NULL,
-    isbn TEXT NOT NULL UNIQUE,
-    publisher TEXT NOT NULL
-)`)
-
 function createBookRepository(book) {
     return new Promise((resolve, reject) => {
         const { title, pageCount, isbn, publisher } = book

@@ -8,4 +8,16 @@ const db = new sqlite3.Database('biblioteca_db.sqlite', (error) => {
     }
 })
 
+db.serialize(() => {
+  db.run(`
+    CREATE TABLE IF NOT EXISTS books (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT NOT NULL,
+      pageCount INTEGER NOT NULL,
+      isbn TEXT NOT NULL UNIQUE,
+      publisher TEXT NOT NULL
+    )
+  `);
+});
+
 export default db
